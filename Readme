@@ -1,5 +1,7 @@
 Objective: To analyze workforce data & generate actionable people insights using Google Sheets.
 
+View: https://docs.google.com/spreadsheets/d/1I0vCzQYcvXF_9ptCDL760wO2BoVrEyKzOgkIRDSnzLU/edit?usp=sharing
+
 Data Preparation:
 Working Data Creation: Duplicated the Employees sheet into a new tab called Working_Data. All transformations & analysis were done only on Working_Data. Original raw data remained untouched.
 
