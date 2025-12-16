@@ -1,9 +1,8 @@
 Objective: To analyze workforce data & generate actionable people insights using Google Sheets.
 
-View: https://docs.google.com/spreadsheets/d/1I0vCzQYcvXF_9ptCDL760wO2BoVrEyKzOgkIRDSnzLU/edit?usp=sharing
+View here: https://docs.google.com/spreadsheets/d/1I0vCzQYcvXF_9ptCDL760wO2BoVrEyKzOgkIRDSnzLU/edit?usp=sharing
 
-Data Preparation:
-Working Data Creation: Duplicated the Employees sheet into a new tab called Working_Data. All transformations & analysis were done only on Working_Data. Original raw data remained untouched.
+Data Preparation: Working Data Creation: Duplicated the Employees sheet into a new tab called Working_Data. All transformations & analysis were done only on Working_Data. Original raw data remained untouched.
 
 Level Mapping (Designation - Level):
 Purpose: Ensure each employee has a standardized level (L1 - L8).
@@ -26,9 +25,5 @@ Exit Quarter (Derived Column)
 Purpose: Track exit timing while keeping active employees blank.
 Formula: =IF(O2="","", "Q"&ROUNDUP(MONTH(O2)/3,0)&" "&YEAR(O2))
 
-
-5.2 Charts Included: 
-1. Joiners vs Exits overall.
-2. Headcount Trend by Function & Level - 2024.
-3.	Attrition Rate Trend overall.
+Charts Included: Joiners vs Exits overall, Headcount Trend by Function & Level - 2024, Attrition Rate Trend overall.
 Conclusion: This project demonstrates: Strong data preparation, Correct people analytics metrics, Clear business interpretation, Ready reporting.
