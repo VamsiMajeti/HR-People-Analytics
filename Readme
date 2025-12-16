@@ -1,0 +1,32 @@
+Objective: To analyze workforce data & generate actionable people insights using Google Sheets.
+
+Data Preparation:
+Working Data Creation: Duplicated the Employees sheet into a new tab called Working_Data. All transformations & analysis were done only on Working_Data. Original raw data remained untouched.
+
+Level Mapping (Designation - Level):
+Purpose: Ensure each employee has a standardized level (L1 - L8).
+Formula used: =IFERROR(VLOOKUP(H2, Level_Map!A:B, 2, FALSE), "")
+
+Business Unit Mapping (Function - BU)
+Purpose: Categorize employees into Business Units.
+Formula used: =IFERROR(VLOOKUP(I2, Function_BU_Map!A:B, 2, FALSE), "")
+
+Status Flag (Active vs Exited)
+Purpose: Identify current employees vs exited employees.
+Logic if Working then active else Relieved then Exited.
+Formula: =IF(G2="Working","Active","Exited")
+
+Join Quarter (Derived Column)
+Purpose: Enable quarterly analysis of joiners.
+Formula: ="Q"&ROUNDUP(MONTH(C2)/3,0)&" "&YEAR(C2)
+
+Exit Quarter (Derived Column)
+Purpose: Track exit timing while keeping active employees blank.
+Formula: =IF(O2="","", "Q"&ROUNDUP(MONTH(O2)/3,0)&" "&YEAR(O2))
+
+
+5.2 Charts Included: 
+1. Joiners vs Exits overall.
+2. Headcount Trend by Function & Level - 2024.
+3.	Attrition Rate Trend overall.
+Conclusion: This project demonstrates: Strong data preparation, Correct people analytics metrics, Clear business interpretation, Ready reporting.
